@@ -3,6 +3,7 @@ name = "angry-logger"
 version = "0.1.0"
 description = "Make your logging more passive agressive. Or just agressive agressive."
 readme = 'README.md'
+homepage = 'https://github.com/GitToby/angry-logger'
 authors = ["Toby Devlin <toby@tobydevlin.com>"]
 license = 'MIT'
 
