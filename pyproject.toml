@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Make your logging more passive agressive. Or just agressive agressive."
 readme = 'README.md'
 authors = ["Toby Devlin <toby@tobydevlin.com>"]
-licance = 'MIT'
+license = 'MIT'
 
 [tool.poetry.dependencies]
 python = "^3.7"
