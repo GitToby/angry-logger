@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "angry-logger"
+version = "0.1.0"
+description = "Make your logging more passive agressive. Or just agressive agressive."
+readme = 'README.md'
+authors = ["Toby Devlin <toby@tobydevlin.com>"]
+licance = 'MIT'
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.9b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
