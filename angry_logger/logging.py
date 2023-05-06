@@ -1,26 +1,16 @@
 import logging as original_logging
 import random
-import re
 from typing import Any
 
 from ._const import *
 
-config = {"potty_mouth": True}
-
-
-def go_to_town(potty_mouth=True):
-    config["potty_mouth"] = potty_mouth
-    my_regular_logger = original_logging.getLogger("regular_logger")
-    my_regular_logger.info("Gosh this is going to be fun.")
-    original_logging.setLoggerClass(_AngryLogger)
-    my_angry_logger = original_logging.getLogger("angry_logger")
-    my_angry_logger.info("You should be all set up now.")
+_config = {"potty_mouth": True}
 
 
 class _AngryLogger(original_logging.Logger):
     @staticmethod
     def clean_up(message: str) -> str:
-        if not config["potty_mouth"]:
+        if not _config["potty_mouth"]:
             for pattern in NAUGHTY_SUBS:
                 message = pattern.sub("*****", message)
         return message
@@ -48,3 +38,12 @@ class _AngryLogger(original_logging.Logger):
         wrapper = random.choice(ERROR_SUBS)
         wrapper = self.clean_up(wrapper)
         super().error(wrapper.format(msg), *args, **kwargs)
+
+
+def start(potty_mouth=True):
+    _config["potty_mouth"] = potty_mouth
+    my_regular_logger = original_logging.getLogger("regular_logger")
+    my_regular_logger.info("Gosh this is going to be fun...")
+    original_logging.setLoggerClass(_AngryLogger)
+    my_angry_logger = original_logging.getLogger("angry_logger")
+    my_angry_logger.info("You should be all set up now.")

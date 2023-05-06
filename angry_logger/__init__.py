@@ -1,3 +1,3 @@
-from .logging import go_to_town
+from .logging import start
 
-__version__ = "0.1.0"
+__version__ = "1.0.0"

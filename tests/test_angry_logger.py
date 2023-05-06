@@ -1,9 +1,11 @@
-def test_version():
-    assert angry_logger.__version__ == "0.1.0"
-
+import logging
 
 import angry_logger
-import logging
+
+
+def test_version():
+    assert angry_logger.__version__ == "1.0.0"
+
 
 angry_logger.go_to_town(potty_mouth=False)
 logging.basicConfig(level=logging.DEBUG)

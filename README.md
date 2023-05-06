@@ -13,12 +13,12 @@ pip install angry-logger
 When deciding your project needs more aggression, all you have to do is tell the Angry Logger to go to town. Like so.
 ```python
 import angry_logger
-angry_logger.go_to_town()
+angry_logger.start()
 ```
 If you're not a fan of naughty words, you can tell the angry logger to be less of a potty mouth.
 ```python
 import angry_logger
-angry_logger.go_to_town(potty_mouth=False)
+angry_logger.start(potty_mouth=False)
 ```
 
 From here, use your logging as you normally would.
@@ -26,7 +26,7 @@ From here, use your logging as you normally would.
 import angry_logger
 import logging
 
-angry_logger.go_to_town(potty_mouth=False)
+angry_logger.start(potty_mouth=False)
 logging.basicConfig(level=logging.DEBUG)
 
 test_logger = logging.getLogger("test_logger")
