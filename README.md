@@ -1,3 +1,6 @@
+[![https://img.shields.io/pypi/v/angry-logger]](https://pypi.org/project/angry-logger/)
+[![https://img.shields.io/pypi/l/angry-logger]](https://github.com/GitToby/angry-logger)
+
 # Angry Logging Made Easy
 
 Do you want to show your logger to be more passive aggressive? maybe just actual aggressive? This is the library for

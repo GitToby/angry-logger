@@ -7,6 +7,9 @@ homepage = 'https://github.com/GitToby/angry-logger'
 authors = ["Toby Devlin <toby@tobydevlin.com>"]
 license = 'MIT'
 
+[tool.poetry.urls]
+"PyPi" = "https://pypi.org/project/angry-logger/"
+
 [tool.poetry.dependencies]
 python = "^3.7"
 
