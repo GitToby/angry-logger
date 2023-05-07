@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "angry-logger"
-version = "1.0.0"
+version = "1.0.1"
 description = "Make your logging more passive agressive. Or just agressive agressive."
 readme = 'README.md'
 homepage = 'https://github.com/GitToby/angry-logger'
