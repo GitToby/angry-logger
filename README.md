@@ -1,5 +1,6 @@
-[![https://img.shields.io/pypi/v/angry-logger]](https://pypi.org/project/angry-logger/)
-[![https://img.shields.io/pypi/l/angry-logger]](https://github.com/GitToby/angry-logger)
+
+[![version](https://img.shields.io/pypi/v/angry-logger)](https://pypi.org/project/angry-logger/)
+[![licence](https://img.shields.io/pypi/l/angry-logger)](https://github.com/GitToby/angry-logger)
 
 # Angry Logging Made Easy
 
